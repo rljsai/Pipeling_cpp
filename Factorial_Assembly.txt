@@ -1,0 +1,12 @@
+addi $2,$0,5
+addi $5,$0,1
+addi $3,$0,1
+addi $4,$0,2
+loop
+beq $2,$5,end
+addi $5,$5,1
+mult $6,$3,$4
+add $3,$6,$0
+addi $4,$4,1
+j loop
+end
